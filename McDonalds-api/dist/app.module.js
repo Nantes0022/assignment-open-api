@@ -11,8 +11,6 @@ const common_1 = require("@nestjs/common");
 const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const axios_1 = require("@nestjs/axios");
-const grocery_controller_1 = require("./grocery/grocery.controller");
-const grocery_service_1 = require("./grocery/grocery.service");
 const mcdonalds_service_1 = require("./mcdonalds/mcdonalds.service");
 const mcdonalds_controller_1 = require("./mcdonalds/mcdonalds.controller");
 let AppModule = class AppModule {
@@ -21,8 +19,8 @@ exports.AppModule = AppModule;
 exports.AppModule = AppModule = __decorate([
     (0, common_1.Module)({
         imports: [axios_1.HttpModule],
-        controllers: [app_controller_1.AppController, grocery_controller_1.GroceryController, mcdonalds_controller_1.McDonaldsController,],
-        providers: [app_service_1.AppService, grocery_service_1.GroceryService, mcdonalds_service_1.McdonaldsService],
+        controllers: [app_controller_1.AppController, mcdonalds_controller_1.McDonaldsController,],
+        providers: [app_service_1.AppService, mcdonalds_service_1.McdonaldsService],
     })
 ], AppModule);
 //# sourceMappingURL=app.module.js.map
